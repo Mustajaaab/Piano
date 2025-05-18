@@ -4,7 +4,7 @@ export default function Home() {
     <main className="container mx-auto">
         <h1 className="text-[#494949] text-3xl font-semibold mt-14">1. Information We Collect</h1>
         <p className="text-[#454545] text-lg font-normal mt-7 leading-9">Our online piano tool is designed to be used without the need to create an account or provide personal information. However, we may collect the following type of data:</p>
-        <p className="text-[#454545] text-lg font-normal leading-9">• Microphone Access: When you use the tuner feature, we request access to your device’s microphone to detect and analyze sound. This is solely for the purpose of identifying the pitch of notes played on your instrument.</p>
+        <p className="text-[#454545] text-lg font-normal leading-9">• Microphone Access: When you use the tuner feature, we request access to your device&apos;s microphone to detect and analyze sound. This is solely for the purpose of identifying the pitch of notes played on your instrument.</p>
         <p className="text-[#454545] text-lg font-normal leading-9">Important: <br />  We do not record, store, or transmit any audio data. The microphone input is processed directly within your browser and is never sent to our servers or any third party.</p>
 
         <h2 className="text-[#494949] text-3xl font-semibold mt-8">2. Use of Data</h2>
@@ -16,7 +16,7 @@ export default function Home() {
         <h2 className="text-[#494949] text-3xl font-semibold mt-8">4. Cookies and Tracking</h2>
         <p className="text-[#454545] text-lg font-normal mt-7 leading-9">Our tool does not use cookies or tracking technologies to collect personal data. You can use it anonymously and without being monitored.</p>
 
-        <h2 className="text-[#494949] text-3xl font-semibold mt-8">5. Children’s Privacy</h2>
+        <h2 className="text-[#494949] text-3xl font-semibold mt-8">5. Children&apos;s Privacy</h2>
         <p className="text-[#454545] text-lg font-normal mt-7 leading-9">Our tool is suitable for users of all ages, including children. As we do not collect or store any personal information, we comply with applicable children's privacy regulations (e.g., COPPA).</p>
 
         <h2 className="text-[#494949] text-3xl font-semibold mt-8">6. Data Security</h2>
