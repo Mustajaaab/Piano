@@ -12,6 +12,9 @@ interface PianoKeyProps {
   index: number
   showOctave?: boolean
   flatName?: string
+  width?: number
+  height?: number
+  isLandscape?: boolean
 }
 
 export default function PianoKey({
@@ -26,16 +29,22 @@ export default function PianoKey({
   index,
   showOctave = false,
   flatName,
+  width,
+  height,
+  isLandscape = false,
 }: PianoKeyProps) {
   // Key dimensions - exactly matching Musicca's proportions
-  const whiteKeyWidth = "40px"
-  const blackKeyWidth = "24px"
+  const whiteKeyWidth = width ? `${width}%` : "40px"
+  const blackKeyWidth = isBlack ? `${width ? width * 0.6 : 24}%` : whiteKeyWidth
+  const keyHeight = isLandscape 
+    ? (isBlack ? "120px" : "230px")
+    : (isBlack ? "60px" : "120px")
 
   // Position based on index
   const keyStyle = {
-    width: isBlack ? blackKeyWidth : whiteKeyWidth,
-    height: isBlack ? "110px" : "180px",
-    left: `calc(${index} * ${whiteKeyWidth})`,
+    width: blackKeyWidth,
+    height: keyHeight,
+    left: isBlack ? `calc(${index} * ${whiteKeyWidth} - ${width ? width * 0.3 : 12}%)` : `calc(${index} * ${whiteKeyWidth})`,
     zIndex: isBlack ? 2 : 1,
     borderRadius: "0 0 4px 4px", // Slightly rounded bottom corners
   }
@@ -79,11 +88,11 @@ export default function PianoKey({
       {/* Note name display */}
       {isBlack ? (
         <div className="absolute bottom-4 left-0 right-0 text-center text-[10px] text-white font-medium">
-          {displayName}
+        
           {flatName && (
             <>
               <br />
-              {flatName.replace(/[0-9]/g, "")}
+       
             </>
           )}
         </div>

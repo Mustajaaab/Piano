@@ -125,6 +125,8 @@ export default function PianoKeyboard() {
   const [activeKeys, setActiveKeys] = useState<Set<string>>(new Set())
   const [isLoaded, setIsLoaded] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [isFullscreen, setIsFullscreen] = useState(false)
+  const [isLandscape, setIsLandscape] = useState(false)
   const [loadingProgress, setLoadingProgress] = useState(0)
   const samplerRef = useRef<Tone.Sampler | null>(null)
   const compressorRef = useRef<Tone.Compressor | null>(null)
@@ -132,19 +134,45 @@ export default function PianoKeyboard() {
   const reverbRef = useRef<Tone.Reverb | null>(null)
   const limiterRef = useRef<Tone.Limiter | null>(null)
 
-  // Check if mobile
+  // Toggle fullscreen
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen()
+      setIsFullscreen(true)
+    } else {
+      document.exitFullscreen()
+      setIsFullscreen(false)
+    }
+  }
+
+  // Listen for fullscreen changes
   useEffect(() => {
-    const checkIfMobile = () => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement)
+    }
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange)
+    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange)
+  }, [])
+
+  // Check if mobile and handle orientation
+  useEffect(() => {
+    const checkDeviceAndOrientation = () => {
       if (typeof window !== "undefined") {
         setIsMobile(window.innerWidth < 768)
+        setIsLandscape(window.innerWidth > window.innerHeight)
       }
     }
 
-    checkIfMobile()
+    checkDeviceAndOrientation()
 
     if (typeof window !== "undefined") {
-      window.addEventListener("resize", checkIfMobile)
-      return () => window.removeEventListener("resize", checkIfMobile)
+      window.addEventListener("resize", checkDeviceAndOrientation)
+      window.addEventListener("orientationchange", checkDeviceAndOrientation)
+      return () => {
+        window.removeEventListener("resize", checkDeviceAndOrientation)
+        window.removeEventListener("orientationchange", checkDeviceAndOrientation)
+      }
     }
   }, [])
 
@@ -384,67 +412,104 @@ export default function PianoKeyboard() {
 
   // Calculate the width of the keyboard
   const whiteKeyCount = pianoKeys.filter((key) => !key.isBlack).length
-  const keyboardWidth = isMobile ? "100%" : `${whiteKeyCount * 40}px`
+  const keyboardWidth = "100%"
 
   return (
-    <div className="w-full md:rotate-0 rotate-90 pb-4">
+    <div className={`w-full p-0 ${isMobile ? ' pt-10' : 'pt-10'} md:h-full relative `}>
+      {isMobile && !isFullscreen && (
+        <button
+          onClick={toggleFullscreen}
+          className="absolute top-2 right-2 z-50 bg-black/50 text-white px-3 py-1 rounded-md text-sm"
+        >
+          Fullscreen
+        </button>
+      )}
+      {isMobile && isFullscreen && (
+        <button
+          onClick={toggleFullscreen}
+          className="fixed top-2 right-2 z-50 bg-black/50 text-white px-3 py-1 rounded-md text-sm"
+        >
+          Exit
+        </button>
+      )}
+      {isMobile && !isLandscape && (
+        <div className="absolute top-0 left-0 right-0 bg-black/50 text-white text-center py-2 z-50">
+          <p className="text-sm">Rotate your device for a better experience</p>
+        </div>
+      )}
       <div
-        className=" mx-auto"
+        className={`w-full h-full ${isMobile && isFullscreen ? 'fixed inset-0 bg-white' : ''}`}
         style={{
           width: keyboardWidth,
-          minWidth: isMobile ? "100%" : "100%", // 21 white keys * 40px
-          height: "180px", // Shorter height to match Musicca's design
+          minWidth: "100%",
+          height: isMobile ? (isLandscape ? "100vh" : "20vh") : "180px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: isMobile && !isLandscape ? "40px" : "0"
         }}
       >
-        {!isLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-10 rounded-md">
-            <div className="text-white text-center p-4 w-64">
-              <p className="mb-2">Loading piano sounds... {loadingProgress}%</p>
-              <div className="w-full bg-gray-700 rounded-full h-2.5">
-                <div className="bg-white h-2.5 rounded-full" style={{ width: `${loadingProgress}%` }}></div>
+        <div 
+          className="relative w-full h-full"
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%"
+          }}
+        >
+          {!isLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-10 rounded-md">
+              <div className="text-white text-center p-4 w-64">
+                <p className="mb-2">Loading piano sounds... {loadingProgress}%</p>
+                <div className="w-full bg-gray-700 rounded-full h-2.5">
+                  <div className="bg-white h-2.5 rounded-full" style={{ width: `${loadingProgress}%` }}></div>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Render white keys first (so black keys can overlay) */}
-        {pianoKeys
-          .filter((key) => !key.isBlack)
-          .map((key) => (
-            <PianoKey
-              key={key.note}
-              note={key.note}
-              keyboardKey={key.keyboardKey}
-              isBlack={false}
-              isActive={activeKeys.has(key.note)}
-              onMouseDown={() => handleMouseDown(key.note, false)}
-              onMouseUp={() => handleMouseUp(key.note)}
-              onTouchStart={() => handleMouseDown(key.note, false)}
-              onTouchEnd={() => handleMouseUp(key.note)}
-              index={key.index}
-              showOctave={false} // Set to true to show octave numbers
-            />
-          ))}
+          {/* Render white keys first (so black keys can overlay) */}
+          {pianoKeys
+            .filter((key) => !key.isBlack)
+            .map((key) => (
+              <PianoKey
+                key={key.note}
+                note={key.note}
+                keyboardKey={key.keyboardKey}
+                isBlack={false}
+                isActive={activeKeys.has(key.note)}
+                onMouseDown={() => handleMouseDown(key.note, false)}
+                onMouseUp={() => handleMouseUp(key.note)}
+                onTouchStart={() => handleMouseDown(key.note, false)}
+                onTouchEnd={() => handleMouseUp(key.note)}
+                index={key.index}
+                showOctave={false}
+                width={100 / whiteKeyCount}
+                isLandscape={isLandscape}
+              />
+            ))}
 
-        {/* Render black keys on top */}
-        {pianoKeys
-          .filter((key) => key.isBlack)
-          .map((key) => (
-            <PianoKey
-              key={key.note}
-              note={key.note}
-              keyboardKey={key.keyboardKey}
-              isBlack={true}
-              isActive={activeKeys.has(key.note)}
-              onMouseDown={() => handleMouseDown(key.note, true)}
-              onMouseUp={() => handleMouseUp(key.note)}
-              onTouchStart={() => handleMouseDown(key.note, true)}
-              onTouchEnd={() => handleMouseUp(key.note)}
-              index={key.index}
-              showOctave={false} // Set to true to show octave numbers
-              flatName={key.flatName}
-            />
-          ))}
+          {/* Render black keys on top */}
+          {pianoKeys
+            .filter((key) => key.isBlack)
+            .map((key) => (
+              <PianoKey
+                key={key.note}
+                note={key.note}
+                keyboardKey={key.keyboardKey}
+                isBlack={true}
+                isActive={activeKeys.has(key.note)}
+                onMouseDown={() => handleMouseDown(key.note, true)}
+                onMouseUp={() => handleMouseUp(key.note)}
+                onTouchStart={() => handleMouseDown(key.note, true)}
+                onTouchEnd={() => handleMouseUp(key.note)}
+                index={key.index}
+                showOctave={false}
+                flatName={key.flatName}
+                width={100 / whiteKeyCount}
+                isLandscape={isLandscape}
+              />
+            ))}
+        </div>
       </div>
     </div>
   )
