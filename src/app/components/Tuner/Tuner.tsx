@@ -29,7 +29,7 @@ const analyser = browserAudio.getAnalyser()
 
 declare module 'react-gauge-chart' {
   import { FunctionComponent } from 'react';
-  const GaugeChart: FunctionComponent<any>;
+  const GaugeChart: FunctionComponent<unknown>;
   export default GaugeChart;
 }
 
