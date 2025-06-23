@@ -13,7 +13,6 @@ interface PianoKeyProps {
   showOctave?: boolean
   flatName?: string
   width?: number
-  height?: number
   isLandscape?: boolean
 }
 
@@ -30,7 +29,6 @@ export default function PianoKey({
   showOctave = false,
   flatName,
   width,
-  height,
   isLandscape = false,
 }: PianoKeyProps) {
   // Key dimensions - exactly matching Musicca's proportions

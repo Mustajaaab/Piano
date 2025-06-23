@@ -1,4 +1,3 @@
-
 import { Tuner } from "../components/Tuner"
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
           <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 "><span className="font-semibold">1. Click the Green Start Tuning</span> To Begin</p>
           <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7"><span className="font-semibold">2.  Grant Microphone Access</span> when prompted—this allows the tuner to hear your instrument.</p>  
           <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7"><span className="font-semibold">3. Play a Single Note</span> on your Instrument.</p> 
-          <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7"><span className="font-semibold">4. Watch the Tuner Display</span>, which will tell you the note you're playing and whether it&apos;s in tune.</p> 
+          <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7"><span className="font-semibold">4. Watch the Tuner Display</span>, which will tell you the note you&apos;re playing and whether it&apos;s in tune.</p> 
           <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7"><span className="font-semibold">5. Adjust Your Instrument&apos;s Tuning Pegs</span> until the tuner shows that the note is correctly tuned.</p> 
 
           <h1 className="text-[#494949] lg:text-3xl text-lg font-semibold mt-8">Standard Tunings for Popular Instruments</h1>
