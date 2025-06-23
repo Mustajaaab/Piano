@@ -1,4 +1,4 @@
-import { style, styleVariants } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css"
 import { theme } from "./theme.css"
 
 export const main = style({
