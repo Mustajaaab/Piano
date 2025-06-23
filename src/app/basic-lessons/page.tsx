@@ -1,5 +1,4 @@
 
-import Sidebar from "@/components/lesson-components/sidebar"
 import Main from "@/components/lesson-components/main"
 
 export default function Lessons() {
