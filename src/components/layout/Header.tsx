@@ -1,8 +1,8 @@
-"use client"
+'use client'
 
 import Image from "next/image";
+import Link from 'next/link'
 import { useState } from "react";
-
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,11 +49,11 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:block">
                 <ul className="flex gap-9">
-                    <li className="text-[#3AB24A] cursor-pointer">Virtual Piano</li>
-                    <li className="text-[#494949] cursor-pointer">Tuner</li>
-                    <li className="text-[#494949] cursor-pointer">Basic Lessons</li>
-                    <li className="text-[#494949] cursor-pointer">Privacy Policy</li>
-                    <li className="text-[#494949] cursor-pointer">Contact Us</li>
+                    <li className="text-[#3AB24A] cursor-pointer font-semibold text-sm"><Link href='/'>Virtual Piano</Link></li>
+                    <li className="text-[#494949] cursor-pointer font-semibold text-sm"><Link href='/tuner'>Tuner</Link></li>
+                    <li className="text-[#494949] cursor-pointer font-semibold text-sm"><Link href='/basic-lessons'>Basic Lessons</Link></li>
+                    <li className="text-[#494949] cursor-pointer font-semibold text-sm"><Link href='/privacy-policy'>Privacy Policy</Link></li>
+                    <li className="text-[#494949] cursor-pointer font-semibold text-sm"><Link href='/contact-us'>Contact Us</Link></li>
                 </ul>
             </nav>
         </div>
