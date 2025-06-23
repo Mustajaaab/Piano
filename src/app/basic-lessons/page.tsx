@@ -6,7 +6,7 @@ export default function Lessons() {
   return (
 
     <main className="container mx-auto flex flex-row gap-4">
-      <Sidebar />
+     
       <Main/>
     </main>
 
