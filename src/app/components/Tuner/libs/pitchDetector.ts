@@ -43,7 +43,7 @@ const rxx = (lag: number, N: number, audioSignal: Float32Array) => {
 }
 
 const autocorrelationWithLag = (audioSignal: Float32Array) => {
-  let autocorrelation = []
+  const autocorrelation = []
   let rms = 0 //https://en.wikipedia.org/wiki/Root_mean_square
 
   for (let lag = 0; lag < audioSignal.length; lag++) {
