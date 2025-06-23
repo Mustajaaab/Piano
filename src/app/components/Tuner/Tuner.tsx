@@ -27,6 +27,12 @@ const buffer = new Float32Array(browserAudio.getFftSize())
 const audioContext = browserAudio.getAudioContext()
 const analyser = browserAudio.getAnalyser()
 
+declare module 'react-gauge-chart' {
+  import { FunctionComponent } from 'react';
+  const GaugeChart: FunctionComponent<any>;
+  export default GaugeChart;
+}
+
 export function Tuner(props: ITuner) {
   const [source, setSource] = useState<MediaStreamAudioSourceNode>()
   const [note, setNote] = useState<DetectedNote | undefined>()
