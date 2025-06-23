@@ -8,7 +8,7 @@ class BrowserAudio {
   constructor(window: undefined | (Window & typeof globalThis)) {
     if (typeof window !== "undefined") {
       const audioContext = new (window.AudioContext ||
-        (window as any).webkitAudioContext)()
+        (window as Window & { webkitAudioContext?: typeof AudioContext }).webkitAudioContext)()
       this.audioContext = audioContext
       this.analyser = audioContext.createAnalyser()
       this.analyser.fftSize = FFT_SIZE
