@@ -35,8 +35,8 @@ export const NOTES: Note[] = [
 ]
 
 const rxx = (lag: number, N: number, audioSignal: Float32Array) => {
-  var sum = 0
-  for (var n = 0; n <= N - lag - 1; n++) {
+  let sum = 0
+  for (let n = 0; n <= N - lag - 1; n++) {
     sum += audioSignal[n] * audioSignal[n + lag]
   }
   return sum
@@ -46,7 +46,7 @@ const autocorrelationWithLag = (audioSignal: Float32Array) => {
   let autocorrelation = []
   let rms = 0 //https://en.wikipedia.org/wiki/Root_mean_square
 
-  for (var lag = 0; lag < audioSignal.length; lag++) {
+  for (let lag = 0; lag < audioSignal.length; lag++) {
     autocorrelation[lag] = rxx(lag, audioSignal.length, audioSignal)
     rms += autocorrelation[lag] * autocorrelation[lag]
   }
@@ -60,7 +60,7 @@ const autocorrelationWithLag = (audioSignal: Float32Array) => {
 }
 
 const normalize = (data: number[]) => {
-  var maxAbsX = Math.abs(Math.max(...data))
+  const maxAbsX = Math.abs(Math.max(...data))
   return data.map((x) => x / maxAbsX)
 }
 
