@@ -84,7 +84,7 @@ export function Tuner(props: ITuner) {
     case "guitar":
       return (
         <div className={styles.container}>
-          <ResponsiveContainer width="100%" height={200}>
+          <ResponsiveContainer width="100%" height={300}>
             <RadialBarChart
               cx="50%"
               cy="100%"
