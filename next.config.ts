@@ -1,13 +1,15 @@
-import type { NextConfig } from "next";
+// next.config.js
 
 const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 const withVanillaExtract = createVanillaExtractPlugin();
 
-module.exports = withVanillaExtract({
+const nextConfig = {
   reactStrictMode: true,
-});
-
-const nextConfig: NextConfig = {
+  // Add any production options below
+  swcMinify: true,
+  images: {
+    domains: ['onlinepianoplayer.com'], // adjust as needed
+  },
 };
 
-export default nextConfig;
+module.exports = withVanillaExtract(nextConfig);
