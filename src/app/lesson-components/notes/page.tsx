@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import ArrowGreen from '/public/images/arrow-green.png'
+import Piano from '/public/images/piano-board.png'
+import Pie from '/public/images/pie.png'
 
 const Note = () => {
     return (
@@ -23,7 +26,7 @@ const Note = () => {
             is usually based on the note C. This is also the case on the piano here. Click on the piano
             to listen to the notes;</p>
             <Image
-              src="/images/piano-board.png"
+              src={Piano}
               alt="piano-player"
               width={365}
               height={111}
@@ -34,7 +37,7 @@ const Note = () => {
             <div className='bg-[#EAFAEE] py-9 px-11 rounded-xl border-l-[17px] border-[#a7dcae] mt-10 flex items-center gap-10'>
                 <div>
                     <Image
-                    src='/images/pie.png'
+                    src={Pie}
                     alt='pie'
                     width={60}
                     height={60}/>
@@ -43,9 +46,9 @@ const Note = () => {
                     <h2 className='text-lg font-medium text-black leading-7'>Exercise 1</h2>
                     <div className='flex items-center space-x-2'>
                       <p className='text-black text-lg'>Notes</p>
-                      <Image src='/images/arrow-green.png' width={10} height={10} alt='arrow' className='h-2.5 w-2.5'/>
+                      <Image src={ArrowGreen} width={10} height={10} alt='arrow' className='h-2.5 w-2.5'/>
                       <p className='text-black text-lg'>Piano</p>
-                      <Image src='/images/arrow-green.png' width={10} height={10} alt='arrow' className='h-2.5 w-2.5'/>
+                      <Image src={ArrowGreen} width={10} height={10} alt='arrow' className='h-2.5 w-2.5'/>
                       <p className='text-black text-lg'>Naturals1 And Naturals 2</p>
                     </div>
                 </div>
@@ -57,7 +60,7 @@ const Note = () => {
              called middle C. On a standard piano with 88 keys, middle C is the fourth C from the 
              left. Click on the piano to hear the note:</p>
             <Image
-              src="/images/piano-board.png"
+              src={Piano}
               alt="piano-player"
               width={365}
               height={111}
@@ -74,7 +77,7 @@ const Note = () => {
             eight versions of each note. The distance from any note to the nearest lower or higher version 
             of the same note is called an octave:</p>
             <Image
-              src="/images/piano-board.png"
+              src={Piano}
               alt="piano-player"
               width={365}
               height={111}

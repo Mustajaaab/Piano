@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Phone from '/public/images/phone.png'
 
 export default function Home() {
   return (
     <main className="container mx-auto px-4">
       <div className="flex flex-col items-center">
         <div className="flex gap-2 border-2 border-[#E5E5E5] py-1 px-2.5 rounded-lg">
-          <Image src="/images/phone.png" alt="Logo" width={20} height={22} />
+          <Image src={Phone} alt="Logo" width={20} height={22} />
           <p className="text-[#737373] text-sm">Contact Us</p>
         </div>
       </div>

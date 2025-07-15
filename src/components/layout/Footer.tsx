@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Logo from '/public/images/logoo.png';
 const Footer = () => {
   return (
     <>
@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="py-14 flex flex-col justify-center items-center px-4">
           <div className="w-[145px] lg:w-[243px]">
             <Image
-              src="/images/logoo.png"
+              src={Logo}
               alt="Logo"
               width={243}
               height={45}

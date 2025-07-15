@@ -1,5 +1,14 @@
 import Image from "next/image";
 import Link from 'next/link';
+import Notes from '/public/images/piano.png'
+import Staff from '/public/images/staff.png'
+import Clefs from '/public/images/clefs.png'
+import Accidentals from '/public/images/accidentals.png'
+import Intervals from '/public/images/intervals.png'
+import Chords from '/public/images/chords.png'
+import Scales from '/public/images/scales.png'
+import Keys from '/public/images/keys.png'
+
 
 const Lesson = () => {
   return (
@@ -22,7 +31,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/piano.png" alt="piano" fill className="object-cover" />
+            <Image src={Notes} alt="piano" fill className="object-cover" />
           </div>
         </Link>
 
@@ -37,7 +46,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/staff.png" alt="staff" fill className="object-cover" />
+            <Image src={Staff} alt="staff" fill className="object-cover" />
           </div>
         </div>
       </div>
@@ -54,7 +63,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/clefs.png" alt="piano" fill className="object-cover" />
+            <Image src={Clefs} alt="piano" fill className="object-cover" />
           </div>
         </div>
 
@@ -69,7 +78,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/accidentals.png" alt="staff" fill className="object-cover" />
+            <Image src={Accidentals} alt="staff" fill className="object-cover" />
           </div>
         </div>
       </div>
@@ -86,7 +95,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/intervals.png" alt="piano" fill className="object-cover" />
+            <Image src={Intervals} alt="piano" fill className="object-cover" />
           </div>
         </div>
 
@@ -101,7 +110,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/chords.png" alt="staff" fill className="object-cover" />
+            <Image src={Chords} alt="staff" fill className="object-cover" />
           </div>
         </div>
       </div>
@@ -118,7 +127,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/scales.png" alt="piano" fill className="object-cover" />
+            <Image src={Scales} alt="piano" fill className="object-cover" />
           </div>
         </div>
 
@@ -133,7 +142,7 @@ const Lesson = () => {
             </p>
           </div>
           <div className="relative w-full h-[190px] mt-4">
-            <Image src="/images/keys.png" alt="staff" fill className="object-cover" />
+            <Image src={Keys} alt="staff" fill className="object-cover" />
           </div>
         </div>
       </div>
