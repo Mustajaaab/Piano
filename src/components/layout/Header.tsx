@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react'; // Icons for burger and close
-
+import playerImage from '/public/images/player.png';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,7 +12,7 @@ const Header = () => {
     <header className="text-white p-6 lg:p-9">
       <div className="container mx-auto flex justify-between items-center">
         <Image
-          src="/images/player.png"
+          src={playerImage}
           alt="Logo"
           width={180}
           height={45}
