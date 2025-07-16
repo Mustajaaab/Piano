@@ -433,7 +433,7 @@ export default function PianoKeyboard() {
         </button>
       )}
       {isMobile && !isLandscape && (
-        <div className="absolute top-0 left-0 right-0 bg-black/50 text-white text-center py-2 z-50">
+        <div className=" bg-black/50 text-white text-center py-2 z-50">
           <p className="text-sm">Rotate your device for a better experience</p>
         </div>
       )}
