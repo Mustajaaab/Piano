@@ -1,5 +1,12 @@
 import Image from "next/image";
-import Phone from '/public/images/phone.png'
+import Phone from "/public/images/phone.png";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Online Piano Player",
+  description:
+    "Have questions or need assistance? Contact now to get support with our online piano tools. We're here to help you learn and play with ease.",
+};
 
 export default function Home() {
   return (
@@ -11,22 +18,32 @@ export default function Home() {
         </div>
       </div>
 
-      <h1 className="text-[#0A0A0A] font-semibold text-5xl text-center mt-4">
-        Contact Us
+      <h1 className="text-[#0A0A0A] font-semibold lg:text-5xl text-4xl text-center mt-4">
+        Contact Now
       </h1>
 
-      <p className="text-[#525252] text-[16px] text-center mt-4">
-        Experiencing licensing, billing, or technical challenges? Interested in providing <br />
-        feedback? Seeking information about our pricing plan? Feel free to reach out to us.
+      <p className="text-[#525252] lg:text-[16px] text-center mt-4">
+        We&apos;re happy to help you! Whether you have questions about our <br />
+        online piano, need technical support, or want to share feedback, feel <br />
+        free to contact now using the form below.
       </p>
 
+      <h2 className="text-[#0A0A0A] text-3xl font-semibold text-center mt-10">Get in Touch</h2>
+
+      <p className="text-[#525252] text-[16px] text-center mt-2">
+        Please fill out the form, and our team will respond as quickly as possible.
+      </p>
+      
       <form
         action="form"
         className="mt-10 px-5 py-7 border-[1px] border-[#E5E5E5] w-full max-w-[720px] mx-auto rounded-2xl"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <div className="flex flex-col gap-1 w-full">
-            <label htmlFor="First_name" className="text-[#737373] text-sm font-semibold">
+            <label
+              htmlFor="First_name"
+              className="text-[#737373] text-sm font-semibold"
+            >
               First name
             </label>
             <input
@@ -38,7 +55,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-1 w-full">
-            <label htmlFor="Last_name" className="text-[#737373] text-sm font-semibold">
+            <label
+              htmlFor="Last_name"
+              className="text-[#737373] text-sm font-semibold"
+            >
               Last name
             </label>
             <input
@@ -51,7 +71,11 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-1 mt-6">
-          <label htmlFor="Email" className="text-[#737373] text-sm font-semibold">
+          
+          <label
+            htmlFor="Email"
+            className="text-[#737373] text-sm font-semibold"
+          >
             Email
           </label>
           <input
@@ -63,8 +87,11 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-1 mt-6">
-          <label htmlFor="Description" className="text-[#737373] text-sm font-semibold">
-            Description
+          <label
+            htmlFor="Description"
+            className="text-[#737373] text-sm font-semibold"
+          >
+            Message
           </label>
           <textarea
             name="Description"
@@ -78,7 +105,7 @@ export default function Home() {
           style={{ background: "linear-gradient(to left, #3AB24A, #56DD68)" }}
           className="w-full text-[16px] font-semibold py-4 mt-14 rounded-2xl hover:underline"
         >
-          Send Message
+          Submit
         </button>
       </form>
     </main>
