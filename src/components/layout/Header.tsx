@@ -18,15 +18,17 @@ const Header = () => {
     }`;
 
   return (
-    <header className="text-white p-6 lg:p-9">
+    <header className="text-white px-6 pb-4 pt-4 lg:px-9 lg:pt-4 ">
       <div className="container mx-auto flex justify-between items-center">
-        <Image
-          src={playerImage}
-          alt="Logo"
-          width={180}
-          height={45}
-          className="cursor-pointer"
-        />
+        <Link href="/online-piano">
+          <Image
+            src={playerImage}
+            alt="Logo"
+            width={180}
+            height={45}
+            className="cursor-pointer"
+          />
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:block">
@@ -58,10 +60,7 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Divider */}
-      <div className="my-6 mx-auto w-full px-6 lg:px-40">
-        <div className="h-px bg-gray-300 w-full" />
-      </div>
+    
 
       {/* Mobile Nav */}
       {menuOpen && (

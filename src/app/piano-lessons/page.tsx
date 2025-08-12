@@ -50,7 +50,7 @@ const Lesson = () => {
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./learn-piano-keyboard-online"
                 className="text-black font-semibold underline"
               >
                 Read More
@@ -75,7 +75,7 @@ const Lesson = () => {
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./reading-piano-sheet-music"
                 className="text-black font-semibold underline"
               >
                 Read More
@@ -132,7 +132,7 @@ const Lesson = () => {
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./piano-scales"
                 className="text-black font-semibold underline"
               >
                 Read More

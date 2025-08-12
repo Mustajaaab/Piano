@@ -1,18 +1,10 @@
-import PianoKeyboard from "@/components/piono/piano-keyboard";
+import SpaceNebula from '@/components/space-nebula/space-nebula'
 
 export default function Home() {
   return (
     <div className="w-full">
       <div className="w-full">
-        <h1 className="text-[#494949] lg:text-5xl text-3xl font-semibold text-center lg:leading-16">
-          Play the Music You Love <br /> with Our Online Piano
-        </h1>
-        <p className="text-[#454545] font-normal text-lg leading-9 mt-7 lg:w-[782px] text-center lg:mx-auto mx-6 mb-10">
-          Play your favorite songs online piano now. Learn your favorite songs
-          with guided visuals, no matter your skill level. Our powerful piano
-          online piano makes learning fast, easy, and fun.
-        </p>
-        <PianoKeyboard />
+        <SpaceNebula/>
       </div>
 
       {/* Cards */}
