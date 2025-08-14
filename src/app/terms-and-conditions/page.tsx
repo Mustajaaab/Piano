@@ -26,15 +26,16 @@ export default function Home() {
         Use of the Website
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        You may use OnlinePianoPlayer.com for personal, non-commercial purposes
-        only. You agree not to misuse the site or attempt to harm its
-        functionality. <br />
-        Examples of misuse include: <br />
-        • Copying or redistributing content without permission
+        You can use this site for free to play piano for fun or learning. You
+        must not use it to do anything wrong or harmful. <br /> Some examples of
+        wrong use include: <br />
+        • Taking or sharing things from the site without asking
         <br />
-        • Uploading harmful code or software
+        • Adding bad code or anything that breaks the website
         <br />
-        • Using bots or automated scripts to interact with the platform
+        • Using bots or tools to click or play automatically
+        <br />
+        • This site is for normal people to enjoy. Please treat it kindly.
         <br />
       </p>
 
@@ -47,74 +48,65 @@ export default function Home() {
         <span className="font-semibold">OnlinePianoPlayer</span> or its content
         partners. <br />
         You may <span className="font-semibold">not</span>: <br />
-        • Reproduce or distribute content from the site without written
-        permission <br />• Use any part of the site for commercial purposes
-        without our approval
+        • You must not copy or share anything without permission <br />• You
+        must not use our content to make money unless we say it's okay <br />•
+        All parts of this site are protected by law.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         No User Accounts
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Our platform does <span className="font-semibold">not</span> require you
-        to sign up or create an account. You are free to use the online piano
-        tool without providing personal information.
+        You don&apos;t have to sign up or give us your name or email to use this
+        piano. Just open the website and start playing. We don&apos;t ask for
+        your personal information, so you can stay private and enjoy the music
+        right away.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         Third-Party Links
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        We may include links to helpful tools, resources, or affiliate products.
-        We don&apos;t control those websites and are not responsible for their
-        content, privacy policies, or practices. <br />
-        Please review their terms and policies before interacting with those
-        external sites.
+        Sometimes, we share links to other sites that might help you or show you
+        more tools or products. We don&apos;t control those websites. If you
+        click on them, please be careful and read their rules. We are not
+        responsible for what happens on those sites.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
-        Limitation of Liability
+        Our Responsibility
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        OnlinePianoPlayer.com is provided "as is" and "as available." We do our
-        best to keep the site running smoothly and error-free, but we cannot
-        guarantee perfect functionality at all times. <br />
-        We are <span className="font-semibold">not liable</span> for any
-        damages, losses, or interruptions resulting from your use of the site.
+        We try hard to keep the website working well all the time. But
+        sometimes, things might not work perfectly. If the site stops working or
+        causes problems, we are not responsible for any troubles or losses you
+        might have. Please use the site carefully.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
-        Data Security
+        Changes to These Rules
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        We follow best practices to keep your browsing secure. Since we
-        don&apos;t store any personal data, there&apos;s nothing on our servers
-        that can be accessed or compromised.
-      </p>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
-        Changes to the Terms
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        We may update these terms from time to time. Continued use of our site
-        means you accept any changes. You should revisit this page occasionally
-        to stay informed.
+        We might change these terms now and then. When we do, we will update the
+        date here. If you keep using the site, it means you agree with the new
+        rules. It&apos;s a good idea to check this page once in a while to know
+        what&apos;s new.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         Governing Law
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        These Terms & Conditions are governed by the laws of <span className='font-semibold'>Pakistan</span> (or your
-        country of operation). Any legal disputes must be handled in a local
-        court of jurisdiction.
+        These terms follow the laws of Pakistan (or the country where you live,
+        if different). If there is ever a big problem, it will be handled by a
+        local court as per the law.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         Contact
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Have questions? contact us anytime at: <br />
+        If you have any questions about these rules or anything else.<br />
         <Link
           href="./contact-now"
           className="text-[#3AB24A] font-semibold underline"

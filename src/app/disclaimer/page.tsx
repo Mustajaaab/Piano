@@ -17,76 +17,66 @@ export default function Home() {
         July 18, 2025
       </p>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 mt-4">
-        Welcome to <span className="font-semibold">OnlinePianoPlayer</span>. By
-        using our website, you acknowledge and agree to the terms of this
-        disclaimer. Please read it carefully to understand how our platform
-        operates and what you can expect.
+        Welcome to OnlinePianoPlayer.com. When you use this website, you agree
+        to the terms in this disclaimer. Please read it carefully so you know
+        what to expect when using our site.
       </p>
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         Educational & Entertainment Purpose Only
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        The content on <span className="font-semibold">OnlinePianoPlayer</span>,
-        including the virtual piano tool, music lessons, blogs, and tips, is
-        provided for{" "}
-        <span className="font-semibold">educational and entertainment</span>{" "}
-        purposes only. We aim to help users explore music, learn basic piano
-        concepts, and enjoy the experience of playing. We do{" "}
-        <span className="font-semibold">not</span> guarantee professional
-        results or certifications.
+        This website is here to help you learn piano basics and have fun playing
+        music. The virtual piano, lessons, and articles are for teaching and
+        enjoyment only. We don&apos;t promise you will become a professional or
+        get any certificates from using our site.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         No Professional Advice
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Any tutorials, tips, or guides on this site are{" "}
-        <span className="font-semibold">
-          not a substitute for professional music instruction
-        </span>
-        . If you're seeking advanced training or expert advice, we recommend
-        working with a certified music teacher or instructor.
+        The tips and lessons here are simple and made for beginners. If you want
+        serious music training, it&apos;s best to find a real piano teacher. Our
+        site can&apos;t replace lessons from an expert.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         Accuracy of Information
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        While we strive to keep all content accurate and up-to-date, we{" "}
-        <span className="font-semibold">make no warranties</span> about the
-        completeness, reliability, or accuracy of any information on this site.{" "}
-        <br />
-        Your use of the content is at your own risk. We are not responsible for
-        any errors, omissions, or misunderstandings resulting from your use of
-        the site.
+        We always try to share correct and fresh information. But sometimes,
+        there might be mistakes or things that are not clear. If you see
+        anything wrong, please remember that using this website is your choice.
+        We cannot be responsible if you face any problems because of those
+        mistakes.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         External Links
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        OnlinePianoPlayer.com may include links to third-party websites for your
-        convenience. We do <span className="font-semibold">not</span> endorse or
-        control these external sites and are {' '}
-        <span className="font-semibold">not responsible</span> for their
-        content, practices, or privacy policies. <br />
-        Always review those sites before engaging with them.
+        We may share links to other helpful websites. But we don&apos;t own or
+        control those sites. Please be careful and check their rules before
+        using them. We are not responsible for anything that happens on those
+        pages.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
         Limitation of Liability
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        By using this website, you agree that <span className="font-semibold">OnlinePianoPlayer</span>, its team, and
-        its content creators will <span className="font-semibold">not be held liable</span> for any losses, damages, or
-        issues arising from your use of our services, lessons, or tools.
+        By using this site, you agree that we (OnlinePianoPlayer and our team)
+        are not responsible if you have any losses or problems from using our
+        tools or lessons. Use everything here at your own risk.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-8">
-        Contact
+        Need to Ask Something?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Have questions? contact us anytime at: <br />
+        If you have questions about this disclaimer or need clarification on any
+        part of it, feel free to contact us:
+        <br />
         <Link
           href="./contact-now"
           className="text-[#3AB24A] font-semibold underline"

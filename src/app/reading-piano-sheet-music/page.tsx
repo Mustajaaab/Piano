@@ -31,11 +31,16 @@ const Reading = () => {
         What Is Piano Sheet Music?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        <span className="font-semibold">Piano sheet music</span> is a written
-        guide that tells you which notes to play, when to play them, and how
-        long to hold each one. It uses a system of symbols like{" "}
-        <span className="font-medium">staff lines, clefs, and notes</span> to
-        communicate music
+        Piano sheet music is a paper or screen with symbols that show you how to
+        play a song on the piano. It tells you:
+      </p>
+      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
+        • Which keys to play <br />
+        • When to play them <br />• How long to hold each key
+      </p>
+      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
+        Instead of words, it uses lines, notes, and marks. These signs help your
+        eyes tell your hands what to do.
       </p>
       <div className="flex justify-start items-center mt-14">
         <Image src={Readings} alt="Keyboard" width={750} height={450} />
@@ -44,16 +49,14 @@ const Reading = () => {
         Understanding the Staff
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        The <span className="font-semibold">staff</span> is made up of five
-        lines and four spaces. Each line or space represents a different note.{" "}
-        <br />
-        There are two main staffs used in piano music:
+        The staff is a set of five lines. Notes sit on these lines or in the
+        spaces between. Each spot gives a different sound. In piano music, we
+        use two staffs together. This is called the grand staff:
       </p>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        • <span className="font-semibold">Treble clef</span> (top staff) - for
-        right-hand notes <br />•{" "}
-        <span className="font-semibold">Bass clef</span> (bottom staff) - for
-        left-hand notes
+        • The top lines are for your right hand (higher notes) <br />
+        • The bottom lines are for your left hand (lower notes) <br />• You read
+        both at the same time when playing.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
@@ -63,15 +66,16 @@ const Reading = () => {
         Clefs show where the notes begin:
       </p>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        • <span className="font-semibold">Treble clef</span> Also called the
-        G-clef, it circles around the G note. You'll play these with your right
-        hand. <br />• <span className="font-semibold">Bass clef</span> Also
-        known as the F-clef, it marks where the F note sits. You'll use your
-        left hand for these notes.
+        • <span className="font-semibold">Treble Clef:</span> Also called the
+        G-clef, it circles around the G note. Used for high sounds. You&apos;ll
+        play these with your right hand.
+        <br />• <span className="font-semibold">Bass Clef:</span> Also known as
+        the F-clef, it marks where the F note sits. Used for low sounds. You'll
+        use your left hand for these notes.
       </p>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8">
-        Knowing where <span className="font-semibold">Middle C</span> falls
-        between both clefs helps anchor your reading.
+        The note Middle C sits between the two staffs. It&apos;s a good place to
+        start learning from.
       </p>
       <div className="flex justify-start items-center mt-14">
         <Image src={ReadingClef} alt="Keyboard" width={750} height={450} />
@@ -81,19 +85,16 @@ const Reading = () => {
         Notes in Piano Sheet Music
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Each note symbol represents a pitch and duration. Here are the basic
+        Notes are little round shapes that tell you which piano key to press.
+        They also show how long to hold the key down. Here are the basic note
         types:
       </p>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        • <span className="font-semibold">Whole Note</span> - 4 Beats
-        <br />• <span className="font-semibold">Half Note</span> - 2 beats{" "}
-        <br />• <span className="font-semibold">Quarter Note</span> - 1 beats{" "}
-        <br />• <span className="font-semibold">Eighth Note</span> - ½ beats{" "}
+        • <span className="font-semibold">Whole Note</span> - hold for 4 counts
+        <br />• <span className="font-semibold">Half Note</span> - hold for 2 counts{" "}
+        <br />• <span className="font-semibold">Quarter Note</span> - hold for 1 count{" "}
+        <br />• <span className="font-semibold">Eighth Note</span> - hold for Half counts{" "}
         <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8">
-        Each note sits on a line or in a space on the staff, showing which key
-        to play.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">

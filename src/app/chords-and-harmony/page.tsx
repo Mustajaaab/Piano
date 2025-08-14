@@ -1,143 +1,92 @@
 import Image from "next/image";
-import ReadingClef from "/public/images/reading-clef.png";
-import Finger from "/public/images/scaleso1.png";
+import FingerTwo from "/public/images/finger2.png";
+import Harmony from "/public/images/harmony.jpg";
 import Scales from "/public/images/scaless.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Learn Piano Scales Easily | Simple Keyboard Scale Guide for Beginners",
+  title: "Chords and Harmony on Piano - Beginner's Guide",
   description:
-    "Master basic piano scales like C Major with this beginner-friendly guide. Understand the pattern, finger placement, and musical scale structure to play confidently.",
+    "Learn chords and harmony on piano to enrich your music. Perfect for beginners playing piano simple songs and improving their musical skills.",
 };
 
-const PianoScales = () => {
+const ChordsHarmony = () => {
   return (
     <div className="lg:container lg:mx-auto mx-6">
       <h1 className="text-[#494949] lg:text-5xl text-4xl font-semibold mt-14 text-center lg:leading-16">
-        Learn And Play Piano Scales Easily
+        Chords and Harmony on Piano
       </h1>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-14 mt-6 lg:leading-9 leading-8">
-        Learning <span className="font-semibold">piano scales </span> is like
-        building the foundation of your music house. Scales train your fingers,
-        sharpen your ear, and make learning songs easier.
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8">
-        Let&apos;s start with the most beginner-friendly one: the{" "}
-        <span className="font-semibold">C Major scale.</span>
-      </p>
-      <div className="flex justify-start items-center mt-14">
-        <Image src={Scales} alt="Keyboard" width={750} height={650} />
-      </div>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        What Are Piano Scales?
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        A <span className="font-semibold">piano scale</span> is a sequence of
-        notes played in a specific order, either going up (ascending) or down
-        (descending) <br />
-        Scales are the building blocks of music. Every melody or chord
-        progression starts from one.
-      </p>
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        The C Major Scale: Your First Scale
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        The <span className="font-semibold">C Major scale</span> is perfect for
-        beginners because it uses only white keys. <br />
-        The notes are: <br />
-        <span className="font-semibold">C - D - E - F - G - A - B - C</span>
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        This scale follows a pattern of{" "}
-        <span className="font-semibold">whole steps (W)</span> and{" "}
-        <span className="font-semibold">half steps (H):</span> <br />
-        <span className="font-semibold">W - W - H - W - W - W - H</span>
+        Learning <span className="font-semibold">chords and harmony</span> is
+        key to making your piano playing richer and more musical. Chords form
+        the building blocks of songs, while harmony adds depth and emotion.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Example: Try This!
+        What Are Chords?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Place your right-hand thumb on <span className="font-semibold">C</span>,
-        and play each white key up to the next{" "}
-        <span className="font-semibold">C</span>. <br />
-        Say the note names aloud: <br />
-        <span className="font-semibold">C, D, E, F, G, A, B, C</span>
+        A<span className="font-semibold">chord</span> is a group of notes played
+        together, usually three or more. The most common chords are: <br />•{" "}
+        <span className="font-semibold">Major Chords -</span>happy and bright
+        sounding <br />• <span className="font-semibold">Minor Chords -</span>
+        Supports smoother scale and chord transitions
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Finger Numbers for C Major
+        What Is Harmony?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Right Hand (ascending): <br />
-        <span className="font-semibold">
-          1 (thumb) - 2 - 3 - 1 - 2 - 3 - 4 - 5 (pinky)
-        </span>{" "}
-        <br />
-        Left Hand (ascending): <br />
-        <span className="font-semibold">
-          5 - 4 - 3 - 2 - 1 - 3 - 2 - 1
-        </span>{" "}
-        <br />
-        Start slow. Focus on smooth finger transitions, especially the thumb
-        tuck (right hand) and crossover (left hand).
+        <span className="font-semibold">Harmony</span> happens when two or more
+        notes or chords are played together to complement the melody. It gives
+        music fullness and complexity, turning simple tunes into captivating
+        pieces.
       </p>
 
       <div className="flex justify-start items-center mt-14">
-        <Image src={Finger} alt="Keyboard" width={750} height={450} />
+        <Image src={Harmony} alt="Keyboard" width={750} height={650} />
       </div>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Why Learn Musical Scales on Piano?
+        How to Practice Chords and Harmony
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Practicing <span className="font-semibold">musical scale piano</span>{" "}
-        builds: <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        <span className="font-semibold">
-          • Finger strength and independence
-        </span>
+        • Start by learning basic major and minor chords (like C, G, Am, F){" "}
         <br />
-        <span className="font-semibold">• Better hand coordination</span>
-        <br />
-        <span className="font-semibold">• Key familiarity</span>
-        <br />
-        <span className="font-semibold">
-          • Improvisation & songwriting skills
-        </span>
+        • Practice switching between chords smoothly <br />• Play chords along
+        with simple melodies or
+        <span className="font-semibold">piano simple songs to play</span>
+        Explore playing two-hand harmony: melody with right hand, chords with
+        left hand
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Tips to Practice Keyboard Piano Scale
+        Example: Playing “Twinkle Twinkle Little Star” with Chords
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        • Practice <span className="font-semibold">hands separately</span> first{" "}
-        <br />• Use a <span className="font-semibold">metronome</span> for
-        steady rhythm <br />
-        • Say note names aloud <br />
-        • Keep fingers relaxed and curved <br />
-        • Repeat daily even 5 minutes helps <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        Try other beginner scales next, like G Major or F Major (each adds just
-        one black key).
+        Try playing the melody of “Twinkle Twinkle Little Star” with your right
+        hand. Meanwhile, use your left hand to play these chords in this order:{" "}
+        <br />
+        <span className="font-semibold">
+          C major - F major - C major - G major - C major
+        </span>{" "}
+        <br />
+        This simple harmony adds a rich background and makes the song sound
+        fuller. Practicing this will improve your coordination and musical
+        understanding.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Piano Keys and Scales Basics
+        Why Chords and Harmony Matter
       </h2>
-
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3 lg:mt-7 mt-3">
-        Every key on the piano belongs to multiple scales. Once you learn a few,
-        you&apos;ll spot patterns in songs quickly. <br />
-        Start with major scales, then explore minor scales and modes later.
+      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
+        Chords support the melody, giving songs emotional power. Understanding
+        harmony helps you create your own arrangements and improvise with
+        confidence.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Frequently Asked Questions About Piano Scales
+        Frequently Asked Questions
       </h2>
 
       <section>
@@ -150,7 +99,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is a piano scale?
+                What are chords and harmony in music?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -168,8 +117,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                A piano scale is a set of notes played in a specific order that
-                forms the foundation of melodies and chords.
+                Chords are groups of notes played together; harmony is when
+                notes or chords complement a melody to enrich the sound.
               </p>
             </div>
           </div>
@@ -182,7 +131,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is the easiest scale to learn on piano?
+                How do I learn piano chords and harmony?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -200,9 +149,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                The easiest scale to learn on piano is the{" "}
-                <span className="font-semibold">C Major scale</span> because it
-                uses only white keys.
+                Start with basic major and minor chords, practice switching
+                between them, and add harmony by combining chords with melodies.
               </p>
             </div>
           </div>
@@ -215,7 +163,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How do you play a keyboard piano scale?
+                Can chords improve playing piano simple songs?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -233,8 +181,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                To play a keyboard piano scale, follow a set pattern of finger
-                numbers across the keys, starting slowly and evenly.
+                Yes, chords add depth and make simple songs sound fuller and
+                more expressive.
               </p>
             </div>
           </div>
@@ -247,7 +195,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                Why are piano scales important?
+                What are easy chords for beginners?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -265,8 +213,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Piano scales improve your technique, finger control, and help
-                you understand music structure better.
+                C major, G major, A minor, and F major are great beginner chords
+                to start with.
               </p>
             </div>
           </div>
@@ -279,7 +227,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How many piano scales are there?
+                How does harmony affect music?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -297,8 +245,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                There are 12 major scales and 12 minor scales in the piano, each
-                starting on a different note.
+                Harmony enriches music by adding layers and emotional nuance
+                beyond the main melody.
               </p>
             </div>
           </div>
@@ -308,4 +256,4 @@ const PianoScales = () => {
   );
 };
 
-export default PianoScales;
+export default ChordsHarmony;

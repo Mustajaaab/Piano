@@ -1,10 +1,10 @@
-import SpaceNebula from '@/components/space-nebula/space-nebula'
+import SpaceNebula from "@/components/space-nebula/space-nebula";
 
 export default function Home() {
   return (
     <div className="w-full">
       <div className="w-full">
-        <SpaceNebula/>
+        <SpaceNebula />
       </div>
 
       {/* Cards */}
@@ -25,7 +25,7 @@ export default function Home() {
             {
               img: "/images/three.png",
               title: "Polyphonic Support",
-              desc: "Play multiple notes at once for chords and melodies.",
+              desc: "You can press more than one note at a time to easily play chords or add depth to your melodies.",
             },
             {
               img: "/images/four.png",
@@ -65,8 +65,9 @@ export default function Home() {
           How to Use Our Free Online Piano
         </h2>
         <p className="text-center text-[#454545] font-normal text-base sm:text-lg mt-6 max-w-3xl mx-auto">
-          Getting started with our online piano couldn't be easier. Pick the way
-          you prefer to play:
+          Getting started with our{" "}
+          <span className="font-semibold">online piano</span> couldn't be
+          easier. Pick the way you prefer to play:
         </p>
 
         <div className="flex flex-col lg:flex-row justify-center gap-12 items-start mt-16">
@@ -82,11 +83,11 @@ export default function Home() {
                 1. Play with Your Computer Keyboard
               </h3>
               <p className="text-[#454545] mt-4 text-sm sm:text-base">
-                The top row of letters on your keyboard corresponds to the white
-                keys, while the numbers match the black keys. This smart layout
-                transforms your keyboard into a musical tool, letting you start
-                playing the online piano right away — no prior experience
-                needed.
+                You can play the piano by pressing keys on your computer
+                keyboard. The letter keys play the white piano keys, and the
+                number keys play the black ones. It&apos;s easy to use, no need
+                to know anything before. Just press any key and enjoy making
+                music.
               </p>
             </div>
           </div>
@@ -103,10 +104,11 @@ export default function Home() {
                 2. Play by Clicking or Tapping
               </h3>
               <p className="text-[#454545] mt-4 text-sm sm:text-base">
-                Use your mouse or touchscreen to press the piano keys on the
-                screen. Our online piano is fully responsive, working perfectly
-                on phones, tablets, and computers. This makes it ideal for
-                practicing wherever you are.
+                If you like, you can also use your mouse or finger to press the
+                piano keys on the screen. Our online piano works well on all
+                devices, phones, tablets, and computers. This way, you can
+                practice piano anytime, anywhere, even when you&apos;re on the
+                move.
               </p>
             </div>
           </div>
@@ -151,9 +153,8 @@ export default function Home() {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Yes, you can play our online piano completely free. There&apos;s
-                no signup or software needed just open the page and start
-                playing.
+                Yes. You can use the online piano for free. No sign-up, no
+                download—just open the page and start playing.
               </p>
             </div>
           </div>
@@ -184,9 +185,9 @@ export default function Home() {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                To play the online piano using your keyboard, the top row of
-                letters controls the white keys, and the numbers play the black
-                keys.
+                Your keyboard&apos;s top letter row plays the white notes, and
+                the number keys play the black ones. Just press the keys to
+                start playing.
               </p>
             </div>
           </div>
@@ -217,8 +218,8 @@ export default function Home() {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Yes, our online piano works perfectly on smartphones and
-                tablets. Just tap the screen to play, no app needed.
+                Yes. The piano works on smartphones and tablets. Just tap the
+                screen to play—no app required.
               </p>
             </div>
           </div>
@@ -249,8 +250,8 @@ export default function Home() {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                No, there&apos;s nothing to download. You can play the piano
-                directly in your browser, fast, simple, and instant.
+                No installation needed. You can play the piano right in your
+                browser. It&apos;s quick and easy.
               </p>
             </div>
           </div>
@@ -281,8 +282,8 @@ export default function Home() {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Absolutely. The online piano is designed for all levels, and
-                beginners can easily start by using either their keyboard or
+                Definitely. It&apos;s built for all skill levels. If you&apos;re
+                new, you can start playing right away using your keyboard or
                 touchscreen.
               </p>
             </div>
@@ -293,13 +294,14 @@ export default function Home() {
       <div className="bg-[url('/images/bg.png')] bg-cover bg-center h-[450px] flex flex-col justify-center items-center text-center mx-auto mt-40 lg:mb-40 rounded-sm px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
           Start Playing with Our <br className="hidden lg:block" />
-          Online Piano Today
+          <span className="font-semibold">Online Piano</span> Today
         </h2>
 
         <p className="text-white font-normal text-sm sm:text-base lg:text-lg mt-4 max-w-2xl">
-          Play your favorite songs with our online piano. Learn with guided
-          visuals — no matter your skill level. Our powerful online piano makes
-          learning fast, easy, and fun.
+          Whether you explore, learn your first notes, or play for fun, our
+          <span className="font-semibold">online piano</span> makes it easy to start here. Try it out and enjoy the
+          sound of real keys, right from your screen. No downloads. No signups.
+          Just music.
         </p>
 
         <div className="mt-6">

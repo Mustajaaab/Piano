@@ -1,143 +1,77 @@
 import Image from "next/image";
-import ReadingClef from "/public/images/reading-clef.png";
-import Finger from "/public/images/scaleso1.png";
-import Scales from "/public/images/scaless.png";
+import Keyboard from "/public/images/grand.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Learn Piano Scales Easily | Simple Keyboard Scale Guide for Beginners",
+  title: "Dynamics and Expression | Add Emotion to Your Piano Playing",
   description:
-    "Master basic piano scales like C Major with this beginner-friendly guide. Understand the pattern, finger placement, and musical scale structure to play confidently.",
+    "Learn how dynamics and expression bring life to piano music. Discover tips to play piano simple songs with feeling and improve your musical performance.",
 };
 
-const PianoScales = () => {
+const DynamicsExpressions = () => {
   return (
     <div className="lg:container lg:mx-auto mx-6">
       <h1 className="text-[#494949] lg:text-5xl text-4xl font-semibold mt-14 text-center lg:leading-16">
-        Learn And Play Piano Scales Easily
+        Dynamics and Expression on Piano
       </h1>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-14 mt-6 lg:leading-9 leading-8">
-        Learning <span className="font-semibold">piano scales </span> is like
-        building the foundation of your music house. Scales train your fingers,
-        sharpen your ear, and make learning songs easier.
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8">
-        Let&apos;s start with the most beginner-friendly one: the{" "}
-        <span className="font-semibold">C Major scale.</span>
-      </p>
-      <div className="flex justify-start items-center mt-14">
-        <Image src={Scales} alt="Keyboard" width={750} height={650} />
-      </div>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        What Are Piano Scales?
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        A <span className="font-semibold">piano scale</span> is a sequence of
-        notes played in a specific order, either going up (ascending) or down
-        (descending) <br />
-        Scales are the building blocks of music. Every melody or chord
-        progression starts from one.
-      </p>
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        The C Major Scale: Your First Scale
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        The <span className="font-semibold">C Major scale</span> is perfect for
-        beginners because it uses only white keys. <br />
-        The notes are: <br />
-        <span className="font-semibold">C - D - E - F - G - A - B - C</span>
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        This scale follows a pattern of{" "}
-        <span className="font-semibold">whole steps (W)</span> and{" "}
-        <span className="font-semibold">half steps (H):</span> <br />
-        <span className="font-semibold">W - W - H - W - W - W - H</span>
+        Understanding{" "}
+        <span className="font-semibold">dynamics and expression</span> is
+        essential to playing piano with emotion and impact. Dynamics refer to
+        how loudly or softly you play, while expression involves the feeling you
+        put into the music. Together, they turn simple notes into moving
+        performances.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Example: Try This!
+        What Are Dynamics?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Place your right-hand thumb on <span className="font-semibold">C</span>,
-        and play each white key up to the next{" "}
-        <span className="font-semibold">C</span>. <br />
-        Say the note names aloud: <br />
-        <span className="font-semibold">C, D, E, F, G, A, B, C</span>
+        Dynamics describe the volume levels in music, ranging from very soft
+        (pianissimo) to very loud (fortissimo). Using dynamics effectively can
+        create mood and interest in your playing.
       </p>
-
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Finger Numbers for C Major
+        What Is Expression?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Right Hand (ascending): <br />
-        <span className="font-semibold">
-          1 (thumb) - 2 - 3 - 1 - 2 - 3 - 4 - 5 (pinky)
-        </span>{" "}
-        <br />
-        Left Hand (ascending): <br />
-        <span className="font-semibold">
-          5 - 4 - 3 - 2 - 1 - 3 - 2 - 1
-        </span>{" "}
-        <br />
-        Start slow. Focus on smooth finger transitions, especially the thumb
-        tuck (right hand) and crossover (left hand).
+        Expression goes beyond volume, it&apos;s how you convey emotion through
+        timing, touch, and phrasing. Playing with expression makes{" "}
+        <span className="font-semibold">piano simple songs to play</span> sound
+        more engaging and personal.
       </p>
 
       <div className="flex justify-start items-center mt-14">
-        <Image src={Finger} alt="Keyboard" width={750} height={450} />
+        <Image src={Keyboard} alt="Keyboard" width={750} height={650} />
       </div>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Why Learn Musical Scales on Piano?
+        How to Add Dynamics and Expression
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Practicing <span className="font-semibold">musical scale piano</span>{" "}
-        builds: <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        <span className="font-semibold">
-          • Finger strength and independence
-        </span>
-        <br />
-        <span className="font-semibold">• Better hand coordination</span>
-        <br />
-        <span className="font-semibold">• Key familiarity</span>
-        <br />
-        <span className="font-semibold">
-          • Improvisation & songwriting skills
-        </span>
+        • Vary your touch on the keys: press softly for gentle sounds and harder
+        for louder notes. <br />
+        • Use crescendos (gradually getting louder) and decrescendos (gradually
+        getting softer) <br />
+        • Continue similarly for the rest of the song, focusing on one hand at a
+        time. <br />
+        • Pause slightly between phrases to add breathing space. <br />
+        • Emphasize important notes or chords to highlight the melody <br />•
+        Experiment with tempo changes to make the music feel alive
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Tips to Practice Keyboard Piano Scale
+        Example: Expressing Emotion in “Happy Birthday”
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        • Practice <span className="font-semibold">hands separately</span> first{" "}
-        <br />• Use a <span className="font-semibold">metronome</span> for
-        steady rhythm <br />
-        • Say note names aloud <br />
-        • Keep fingers relaxed and curved <br />
-        • Repeat daily even 5 minutes helps <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        Try other beginner scales next, like G Major or F Major (each adds just
-        one black key).
+        When playing “Happy Birthday,” start softly on the first line and
+        gradually increase volume on the chorus. Pause slightly before the last
+        phrase to create anticipation. This dynamic shaping makes a simple song
+        heartfelt and memorable.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Piano Keys and Scales Basics
-      </h2>
-
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3 lg:mt-7 mt-3">
-        Every key on the piano belongs to multiple scales. Once you learn a few,
-        you&apos;ll spot patterns in songs quickly. <br />
-        Start with major scales, then explore minor scales and modes later.
-      </p>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Frequently Asked Questions About Piano Scales
+        Frequently Asked Questions
       </h2>
 
       <section>
@@ -150,7 +84,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is a piano scale?
+                What are dynamics in piano music?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -168,8 +102,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                A piano scale is a set of notes played in a specific order that
-                forms the foundation of melodies and chords.
+                Dynamics refer to the volume levels, from soft to loud, used to
+                add emotion and interest.
               </p>
             </div>
           </div>
@@ -182,7 +116,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is the easiest scale to learn on piano?
+                How do I add expression to piano playing?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -200,9 +134,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                The easiest scale to learn on piano is the{" "}
-                <span className="font-semibold">C Major scale</span> because it
-                uses only white keys.
+                Use variations in volume, timing, and phrasing to convey feeling
+                and make music more engaging.
               </p>
             </div>
           </div>
@@ -215,7 +148,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How do you play a keyboard piano scale?
+                Why are dynamics important in piano simple songs?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -233,8 +166,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                To play a keyboard piano scale, follow a set pattern of finger
-                numbers across the keys, starting slowly and evenly.
+                Dynamics bring simple songs to life by making them sound less
+                mechanical and more emotional.
               </p>
             </div>
           </div>
@@ -247,7 +180,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                Why are piano scales important?
+                Can beginners learn to play with dynamics and expression?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -265,8 +198,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Piano scales improve your technique, finger control, and help
-                you understand music structure better.
+                Absolutely! Start with basic volume changes and gradually add
+                more expression as you improve.
               </p>
             </div>
           </div>
@@ -279,7 +212,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How many piano scales are there?
+                How does expression affect musical performance?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -297,8 +230,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                There are 12 major scales and 12 minor scales in the piano, each
-                starting on a different note.
+                Expression connects the player and listener emotionally, making
+                performances more impactful.
               </p>
             </div>
           </div>
@@ -308,4 +241,4 @@ const PianoScales = () => {
   );
 };
 
-export default PianoScales;
+export default DynamicsExpressions;

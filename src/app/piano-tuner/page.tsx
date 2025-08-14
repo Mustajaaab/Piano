@@ -35,13 +35,13 @@ export default function TunerPage() {
 
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 mt-7">
           Just click the “Start Tuning” button, allow mic access, and begin
-          playing a note. The{" "}
-          <span className="font-bold lg:text-lg text-sm">piano tuner</span> will
-          detect the pitch and guide you to the correct frequency. Whether
-          you're{" "}
+          playing a note. Our online{" "}
+          <span className="font-bold lg:text-lg text-sm">piano tuner</span>{" "}
+          listens to the sound you play. It shows you if the note is too low or
+          too high. You can fix it right away. It's fast, works for beginners or
+          pros, and helps you{" "}
           <span className="font-bold lg:text-lg text-sm">tuning a piano</span>{" "}
-          for practice or performance, this tool offers quick results for all
-          skill levels.
+          without any stress.
         </p>
 
         <h2 className="text-[#494949] lg:text-3xl text-lg font-semibold mt-8">
@@ -49,18 +49,21 @@ export default function TunerPage() {
         </h2>
 
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 mt-7">
-          A well-tuned piano doesn&apos;t just sound better, it performs better.
-          Humidity, temperature, and time cause pianos to slip out of tune.
-          That&apos;s why using a{" "}
+          Pianos go out of tune even if you don&apos;t touch them. Heat, cold,
+          and moisture change the strings inside. Over time, the notes start to
+          sound wrong. Using a{" "}
           <span className="font-bold lg:text-lg text-sm">piano tuner</span>{" "}
-          regularly is essential to maintaining both sound quality and internal
-          balance.
+          often keeps your piano sounding clean and clear. It also protects the
+          parts inside from getting too loose or too tight.
         </p>
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 mt-7">
-          Even if you own a digital model, the action and feel benefit from
-          routine checkups. Our{" "}
+          Regular{" "}
           <span className="font-bold lg:text-lg text-sm">tuner for piano</span>{" "}
-          makes it easy to get precise adjustments anytime
+          helps it last longer and play better, whether it&apos;s for home use
+          or live shows. Even if you own a digital model, the action and feel
+          benefit from routine checkups. Our{" "}
+          <span className="font-bold lg:text-lg text-sm">tuner for piano</span>{" "}
+          makes it easy to get precise adjustments anytime.
         </p>
 
         <h2 className="text-[#494949] lg:text-3xl text-lg font-semibold mt-8">
@@ -68,19 +71,21 @@ export default function TunerPage() {
         </h2>
 
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 mt-7">
-          Most acoustic pianos are tuned to{" "}
-          <span className="font-bold lg:text-lg text-sm">A440</span>, meaning
-          the A above middle C vibrates at 440 Hz. This has been the global
-          tuning standard for decades. Each key is then tuned relative to this
-          base note using equal temperament, which ensures consistent spacing
-          between notes.
+          Most pianos follow one main rule: the A key above middle C should
+          sound at <span className="font-bold lg:text-lg text-sm">440 Hz</span>.
+          People call this{" "}
+          <span className="font-bold lg:text-lg text-sm">A440</span>, and
+          it&apos;s used almost everywhere in the world. Once that A key sounds
+          right, the rest of the keys are tuned around it, step by step. This
+          keeps all notes even and smooth.
         </p>
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 mt-7">
-          If you're using our{" "}
+          When using our{" "}
           <span className="font-bold lg:text-lg text-sm">piano tuner</span>,
-          start by tuning A4 to 440 Hz, then continue to nearby notes. For
-          digital pianos, this is often set by default but can be adjusted
-          manually.
+          start with the A4 key. Make sure it matches 440 Hz, then fix the other
+          keys one by one. For{" "}
+          <span className="font-bold lg:text-lg text-sm">digital pianos</span>,
+          A440 is usually already set, but you can still check it to be sure.
         </p>
 
         <h2 className="text-[#494949] lg:text-3xl text-lg font-semibold mt-8">
@@ -94,7 +99,8 @@ export default function TunerPage() {
 
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 mt-7">
           • Guitars and ukuleles <br />
-          • Violins and cellos <br />• Other stringed instruments
+          • Violins and cellos <br />
+          • Other stringed instruments
         </p>
 
         <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-7 mt-7">

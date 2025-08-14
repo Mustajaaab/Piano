@@ -1,143 +1,76 @@
 import Image from "next/image";
-import ReadingClef from "/public/images/reading-clef.png";
-import Finger from "/public/images/scaleso1.png";
+import Note from "/public/images/notess.png";
+import Finger from "/public/images/finger.jpg";
 import Scales from "/public/images/scaless.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Learn Piano Scales Easily | Simple Keyboard Scale Guide for Beginners",
+  title: "Basic Rhythm and Beats | Learn Piano Timing and Tempo",
   description:
-    "Master basic piano scales like C Major with this beginner-friendly guide. Understand the pattern, finger placement, and musical scale structure to play confidently.",
+    "Master the basics of rhythm and beats to improve your piano timing. Understand beats, measures, and tempo for confident and accurate playing.",
 };
 
-const PianoScales = () => {
+const Rhythms = () => {
   return (
     <div className="lg:container lg:mx-auto mx-6">
       <h1 className="text-[#494949] lg:text-5xl text-4xl font-semibold mt-14 text-center lg:leading-16">
-        Learn And Play Piano Scales Easily
+        Basic Rhythm and Beats for Piano Beginners
       </h1>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-14 mt-6 lg:leading-9 leading-8">
-        Learning <span className="font-semibold">piano scales </span> is like
-        building the foundation of your music house. Scales train your fingers,
-        sharpen your ear, and make learning songs easier.
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8">
-        Let&apos;s start with the most beginner-friendly one: the{" "}
-        <span className="font-semibold">C Major scale.</span>
-      </p>
-      <div className="flex justify-start items-center mt-14">
-        <Image src={Scales} alt="Keyboard" width={750} height={650} />
-      </div>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        What Are Piano Scales?
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        A <span className="font-semibold">piano scale</span> is a sequence of
-        notes played in a specific order, either going up (ascending) or down
-        (descending) <br />
-        Scales are the building blocks of music. Every melody or chord
-        progression starts from one.
-      </p>
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        The C Major Scale: Your First Scale
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        The <span className="font-semibold">C Major scale</span> is perfect for
-        beginners because it uses only white keys. <br />
-        The notes are: <br />
-        <span className="font-semibold">C - D - E - F - G - A - B - C</span>
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        This scale follows a pattern of{" "}
-        <span className="font-semibold">whole steps (W)</span> and{" "}
-        <span className="font-semibold">half steps (H):</span> <br />
-        <span className="font-semibold">W - W - H - W - W - W - H</span>
+        Understanding <span className="font-semibold">rhythm and beats</span> is
+        crucial to playing piano music accurately. Rhythm gives music its flow,
+        while beats help keep time and structure.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Example: Try This!
+        What Are Rhythm and Beats?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Place your right-hand thumb on <span className="font-semibold">C</span>,
-        and play each white key up to the next{" "}
-        <span className="font-semibold">C</span>. <br />
-        Say the note names aloud: <br />
-        <span className="font-semibold">C, D, E, F, G, A, B, C</span>
+        <span className="font-semibold">Rhythm</span> is the pattern of sounds
+        and silences in music, while
+        <span className="font-semibold">beats</span> are the regular pulses that
+        help you keep time. Together, they guide how music moves forward.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Finger Numbers for C Major
+        How Beats Work
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Right Hand (ascending): <br />
-        <span className="font-semibold">
-          1 (thumb) - 2 - 3 - 1 - 2 - 3 - 4 - 5 (pinky)
-        </span>{" "}
-        <br />
-        Left Hand (ascending): <br />
-        <span className="font-semibold">
-          5 - 4 - 3 - 2 - 1 - 3 - 2 - 1
-        </span>{" "}
-        <br />
-        Start slow. Focus on smooth finger transitions, especially the thumb
-        tuck (right hand) and crossover (left hand).
+        Beats divide music into equal parts. A piece&apos;s{" "}
+        <span className="font-semibold">tempo</span> tells you how fast or slow
+        the beats happen, usually measured in beats per minute (BPM).
       </p>
 
       <div className="flex justify-start items-center mt-14">
-        <Image src={Finger} alt="Keyboard" width={750} height={450} />
+        <Image src={Note} alt="Keyboard" width={750} height={650} />
       </div>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Why Learn Musical Scales on Piano?
+        Measures and Time Signatures
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Practicing <span className="font-semibold">musical scale piano</span>{" "}
-        builds: <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        <span className="font-semibold">
-          • Finger strength and independence
-        </span>
-        <br />
-        <span className="font-semibold">• Better hand coordination</span>
-        <br />
-        <span className="font-semibold">• Key familiarity</span>
-        <br />
-        <span className="font-semibold">
-          • Improvisation & songwriting skills
-        </span>
+        Music is organized into <span className="font-semibold">measures</span>{" "}
+        (or bars), each containing a set number of beats. The{" "}
+        <span className="font-semibold">time signature</span> tells you how many
+        beats per measure, such as 4/4 (four beats per measure) or 3/4 (three
+        beats per measure). <br />
+        For example, the popular song “Twinkle Twinkle Little Star” follows a
+        4/4 time signature, meaning you count four beats in each measure while
+        playing the melody.
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Tips to Practice Keyboard Piano Scale
+        Rhythm Practice Tips
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        • Practice <span className="font-semibold">hands separately</span> first{" "}
-        <br />• Use a <span className="font-semibold">metronome</span> for
-        steady rhythm <br />
-        • Say note names aloud <br />
-        • Keep fingers relaxed and curved <br />
-        • Repeat daily even 5 minutes helps <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        Try other beginner scales next, like G Major or F Major (each adds just
-        one black key).
+        • Clap along to the beat before playing <br />
+        • Use a metronome to keep steady timing <br />
+        • Break down rhythms into smaller patterns <br />• Practice with rhythm
+        games to make learning fun
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Piano Keys and Scales Basics
-      </h2>
-
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3 lg:mt-7 mt-3">
-        Every key on the piano belongs to multiple scales. Once you learn a few,
-        you&apos;ll spot patterns in songs quickly. <br />
-        Start with major scales, then explore minor scales and modes later.
-      </p>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Frequently Asked Questions About Piano Scales
+        Frequently Asked Questions
       </h2>
 
       <section>
@@ -150,7 +83,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is a piano scale?
+                What is rhythm and beats in music?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -168,8 +101,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                A piano scale is a set of notes played in a specific order that
-                forms the foundation of melodies and chords.
+                Rhythm is the pattern of sounds and silences, while beats are
+                the steady pulses that keep time in music.
               </p>
             </div>
           </div>
@@ -182,7 +115,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is the easiest scale to learn on piano?
+                How do I improve my rhythm and beats?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -200,9 +133,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                The easiest scale to learn on piano is the{" "}
-                <span className="font-semibold">C Major scale</span> because it
-                uses only white keys.
+                Practice clapping, use a metronome, and start slow to develop
+                strong rhythm and beat skills.
               </p>
             </div>
           </div>
@@ -215,7 +147,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How do you play a keyboard piano scale?
+                What is a rhythm beats game?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -233,8 +165,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                To play a keyboard piano scale, follow a set pattern of finger
-                numbers across the keys, starting slowly and evenly.
+                A rhythm beats game is an interactive way to practice timing and
+                rhythm through fun exercises.
               </p>
             </div>
           </div>
@@ -247,7 +179,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                Why are piano scales important?
+                Why is rhythm important in piano?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -265,8 +197,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Piano scales improve your technique, finger control, and help
-                you understand music structure better.
+                Rhythm keeps your playing in time, making music sound organized
+                and enjoyable.
               </p>
             </div>
           </div>
@@ -279,7 +211,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How many piano scales are there?
+                How do beats affect music?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -297,8 +229,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                There are 12 major scales and 12 minor scales in the piano, each
-                starting on a different note.
+                Beats set the tempo and structure, helping musicians play
+                together and stay synchronized.
               </p>
             </div>
           </div>
@@ -308,4 +240,4 @@ const PianoScales = () => {
   );
 };
 
-export default PianoScales;
+export default Rhythms;

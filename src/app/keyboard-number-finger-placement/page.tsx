@@ -1,143 +1,105 @@
 import Image from "next/image";
-import ReadingClef from "/public/images/reading-clef.png";
-import Finger from "/public/images/scaleso1.png";
+import FingerTwo from "/public/images/finger2.png";
+import Finger from "/public/images/finger.jpg";
 import Scales from "/public/images/scaless.png";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Learn Piano Scales Easily | Simple Keyboard Scale Guide for Beginners",
+    "Keyboard Number Finger Placement | Proper Finger Technique for Piano Beginners",
   description:
-    "Master basic piano scales like C Major with this beginner-friendly guide. Understand the pattern, finger placement, and musical scale structure to play confidently.",
+    "Learn the correct keyboard number finger placement to play piano smoothly. Master finger numbering and positioning for better control and comfort.",
 };
 
-const PianoScales = () => {
+const FingerPlacement = () => {
   return (
     <div className="lg:container lg:mx-auto mx-6">
       <h1 className="text-[#494949] lg:text-5xl text-4xl font-semibold mt-14 text-center lg:leading-16">
-        Learn And Play Piano Scales Easily
+        Keyboard Number Finger Placement for Piano Beginners
       </h1>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-14 mt-6 lg:leading-9 leading-8">
-        Learning <span className="font-semibold">piano scales </span> is like
-        building the foundation of your music house. Scales train your fingers,
-        sharpen your ear, and make learning songs easier.
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8">
-        Let&apos;s start with the most beginner-friendly one: the{" "}
-        <span className="font-semibold">C Major scale.</span>
+        Understanding{" "}
+        <span className="font-semibold">keyboard number finger placement</span>{" "}
+        is a vital step for new piano players. It teaches you which finger goes
+        where on the keys, helping you build speed, control, and confidence.
       </p>
       <div className="flex justify-start items-center mt-14">
-        <Image src={Scales} alt="Keyboard" width={750} height={650} />
+        <Image src={Finger} alt="Keyboard" width={750} height={650} />
       </div>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        What Are Piano Scales?
+        What Is Keyboard Number Finger Placement?
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        A <span className="font-semibold">piano scale</span> is a sequence of
-        notes played in a specific order, either going up (ascending) or down
-        (descending) <br />
-        Scales are the building blocks of music. Every melody or chord
-        progression starts from one.
+        Each finger on your hand is assigned a number: <br />•{" "}
+        <span className="font-semibold">1</span> = Thumb <br />•{" "}
+        <span className="font-semibold">2</span> = Index Finger <br />•{" "}
+        <span className="font-semibold">3</span> = Middle Finger <br />•{" "}
+        <span className="font-semibold">4</span> = Ring Finger <br />•{" "}
+        <span className="font-semibold">5</span> = Little Finger ( Pinky ){" "}
+        <br />
+        This numbering system is used in{" "}
+        <span className="font-semibold">piano sheet music</span> and lesson
+        books to guide finger movement.
       </p>
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        The C Major Scale: Your First Scale
+        Why Finger Placement Matters
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        The <span className="font-semibold">C Major scale</span> is perfect for
-        beginners because it uses only white keys. <br />
-        The notes are: <br />
-        <span className="font-semibold">C - D - E - F - G - A - B - C</span>
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        This scale follows a pattern of{" "}
-        <span className="font-semibold">whole steps (W)</span> and{" "}
-        <span className="font-semibold">half steps (H):</span> <br />
-        <span className="font-semibold">W - W - H - W - W - W - H</span>
+        Using proper finger placement: <br />
+        • Reduces hand fatigue <br />
+        • Improves accuracy and fluidity <br />
+        • Builds muscle memory faster <br />
+        • Helps you read sheet music more effectively <br />• Supports smoother
+        scale and chord transitions
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Example: Try This!
+        Basic Finger Placement Tips
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Place your right-hand thumb on <span className="font-semibold">C</span>,
-        and play each white key up to the next{" "}
-        <span className="font-semibold">C</span>. <br />
-        Say the note names aloud: <br />
-        <span className="font-semibold">C, D, E, F, G, A, B, C</span>
+        • Sit with a relaxed wrist and curved fingers <br />
+        • Keep all fingertips touching the keys, not flat or too stiff <br />
+        • Don&apos;t stretch or twist fingers unnecessarily <br />• Always
+        return to your hand's natural position after a phrase
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Finger Numbers for C Major
+        Example: Right-Hand C Major Scale
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Right Hand (ascending): <br />
-        <span className="font-semibold">
-          1 (thumb) - 2 - 3 - 1 - 2 - 3 - 4 - 5 (pinky)
-        </span>{" "}
+        Here&apos;s how to use{" "}
+        <span className="font-semibold">finger numbers</span> to play the C
+        major scale with your <span className="font-semibold">right hand</span>:{" "}
         <br />
-        Left Hand (ascending): <br />
-        <span className="font-semibold">
-          5 - 4 - 3 - 2 - 1 - 3 - 2 - 1
-        </span>{" "}
-        <br />
-        Start slow. Focus on smooth finger transitions, especially the thumb
-        tuck (right hand) and crossover (left hand).
+        1 (Thumb) → C <br />
+        2 (Index) → D <br />
+        3 (Middle) → E <br />
+        <span className="font-semibold">Tuck thumb under</span> <br />
+        1 (Thumb) → F <br />
+        2 (Index) → G <br />
+        3 (Middle) → A <br />
+        4 (Ring) → B <br />5 (Pinky) → C
       </p>
 
       <div className="flex justify-start items-center mt-14">
-        <Image src={Finger} alt="Keyboard" width={750} height={450} />
+        <Image src={FingerTwo} alt="Keyboard" width={750} height={450} />
       </div>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Why Learn Musical Scales on Piano?
+        Practice Drill (Try This)
       </h2>
       <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        Practicing <span className="font-semibold">musical scale piano</span>{" "}
-        builds: <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3">
-        <span className="font-semibold">
-          • Finger strength and independence
-        </span>
-        <br />
-        <span className="font-semibold">• Better hand coordination</span>
-        <br />
-        <span className="font-semibold">• Key familiarity</span>
-        <br />
-        <span className="font-semibold">
-          • Improvisation & songwriting skills
-        </span>
+        • Place your right-hand thumb (1) on{" "}
+        <span className="font-semibold">middle C</span> <br />
+        • Play C-D-E using 1-2-3 <br />
+        • Tuck thumb under to F <br />
+        • Continue up to the next C with correct finger numbers <br />• Repeat
+        slowly, then try it with your left hand going down
       </p>
 
       <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Tips to Practice Keyboard Piano Scale
-      </h2>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:mt-7 mt-3 lg:leading-9 leading-8">
-        • Practice <span className="font-semibold">hands separately</span> first{" "}
-        <br />• Use a <span className="font-semibold">metronome</span> for
-        steady rhythm <br />
-        • Say note names aloud <br />
-        • Keep fingers relaxed and curved <br />
-        • Repeat daily even 5 minutes helps <br />
-      </p>
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 ">
-        Try other beginner scales next, like G Major or F Major (each adds just
-        one black key).
-      </p>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Piano Keys and Scales Basics
-      </h2>
-
-      <p className="text-[#454545] lg:text-lg text-sm font-normal lg:leading-9 leading-8 pl-3 lg:mt-7 mt-3">
-        Every key on the piano belongs to multiple scales. Once you learn a few,
-        you&apos;ll spot patterns in songs quickly. <br />
-        Start with major scales, then explore minor scales and modes later.
-      </p>
-
-      <h2 className="text-[#494949] lg:text-3xl text-xl font-semibold mt-14">
-        Frequently Asked Questions About Piano Scales
+        Frequently Asked Questions About Keyboard Number Finger Placement
       </h2>
 
       <section>
@@ -150,7 +112,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is a piano scale?
+                What is keyboard number finger placement?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -168,8 +130,9 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                A piano scale is a set of notes played in a specific order that
-                forms the foundation of melodies and chords.
+                Keyboard number finger placement is a numbering system (1-5) for
+                fingers that helps piano players know which finger to use on
+                each key.
               </p>
             </div>
           </div>
@@ -182,7 +145,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                What is the easiest scale to learn on piano?
+                Why is finger placement important in piano?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -200,9 +163,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                The easiest scale to learn on piano is the{" "}
-                <span className="font-semibold">C Major scale</span> because it
-                uses only white keys.
+                It helps prevent strain, improves technique, and makes learning
+                scales and chords easier.
               </p>
             </div>
           </div>
@@ -215,7 +177,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How do you play a keyboard piano scale?
+                What is a good example of finger number placement?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -233,8 +195,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                To play a keyboard piano scale, follow a set pattern of finger
-                numbers across the keys, starting slowly and evenly.
+                A right-hand C major scale uses fingers 1-2-3, then 1-2-3-4-5
+                from C to C. This is a common beginner exercise.
               </p>
             </div>
           </div>
@@ -247,7 +209,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                Why are piano scales important?
+                Can I use different fingers if I&apos;m more comfortable?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -265,8 +227,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                Piano scales improve your technique, finger control, and help
-                you understand music structure better.
+                At first, stick with standard finger numbers. Over time,
+                you&apos;ll learn when and how to adjust for trickier passages.
               </p>
             </div>
           </div>
@@ -279,7 +241,7 @@ const PianoScales = () => {
               className="flex justify-between items-center p-4 cursor-pointer bg-gray-100 peer-checked:bg-blue-100"
             >
               <h3 className="font-medium text-[#454545]">
-                How many piano scales are there?
+                How can I practice correct finger placement?
               </h3>
               <svg
                 className="w-5 h-5 transition-transform peer-checked:rotate-180 text-[#454545]"
@@ -297,8 +259,8 @@ const PianoScales = () => {
             </label>
             <div className="bg-white px-4 pb-4 pt-4 hidden peer-checked:block">
               <p className="text-[#454545]">
-                There are 12 major scales and 12 minor scales in the piano, each
-                starting on a different note.
+                Practice scales slowly, focusing on correct fingers. Use finger
+                exercise books or online tutorials for guidance.
               </p>
             </div>
           </div>
@@ -308,4 +270,4 @@ const PianoScales = () => {
   );
 };
 
-export default PianoScales;
+export default FingerPlacement;

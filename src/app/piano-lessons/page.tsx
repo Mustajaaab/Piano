@@ -24,12 +24,10 @@ const Lesson = () => {
           Basic Piano Lessons for Beginners
         </h1>
         <p className="text-[#454545] lg:text-lg text-sm font-normal mt-7 leading-7 text-center">
-          Ready to start your <span className="font-bold">piano lessons</span>{" "}
-          journey? These{" "}
-          <span className="font-bold">basic piano music lessons</span> cover
-          everything a beginner needs from understanding the keyboard to playing
-          your first songs with confidence. Our clear, step-by-step lessons make
-          learning piano easy and fun.
+          If you want to start <span className="font-bold">piano lessons</span>{" "}
+          , this is the right place. We&apos;ll help you learn the piano
+          keyboard step by step. Soon, you&apos;ll play your first songs without
+          feeling stuck. Our lessons make learning fun and easy for everyone.
         </p>
       </div>
 
@@ -44,9 +42,10 @@ const Lesson = () => {
               Learn Piano Keyboard
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-10 mt-8 mx-auto">
-              Learn the layout of the white and black keys, identify middle C,
-              and recognize note names. Knowing the Piano keyboard well helps
-              you play smoothly and accurately.
+              First, get to know the white and black keys on the piano. Find the
+              middle C and learn the names of the notes. Knowing the keyboard
+              well helps you play faster and makes your lessons for piano
+              lessons easier to follow.
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
@@ -69,9 +68,10 @@ const Lesson = () => {
               Reading Piano Sheet Music
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-10 mt-8 mx-auto">
-              Discover how to read Piano music notation, including the staff,
-              treble and bass clefs, note values (whole, half, quarter notes),
-              and rests. This knowledge lets you play any sheet music with ease.
+              Learn how to read music notes on the page. You will see the lines
+              called the staff, and symbols like treble and bass clefs. We also
+              explain note types like whole notes, half notes, and rests. This
+              will help you play songs from sheet music smoothly.
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
@@ -96,13 +96,13 @@ const Lesson = () => {
               Finger Numbers and Placement
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-10 mt-8 mx-auto">
-              Proper finger placement is key to good technique. Learn which
-              fingers to use on specific keys to play comfortably and avoid
-              injury.
+              Using the right fingers on the right keys makes playing easier and
+              keeps your hands safe. We show you which fingers to use so your
+              hands don&apos;t get tired or hurt during piano lessons
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./keyboard-number-finger-placement"
                 className="text-black font-semibold underline"
               >
                 Read More
@@ -126,9 +126,9 @@ const Lesson = () => {
               Piano Scales
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-19 mt-8 mx-auto">
-              Practice major and minor piano scales regularly to build finger
-              strength, improve dexterity, and familiarize yourself with musical
-              key patterns.
+              Practice playing major and minor scales. Scales help your fingers
+              get stronger and more flexible. They also teach you how notes work
+              together in music.
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
@@ -158,13 +158,15 @@ const Lesson = () => {
               Basic Rhythm and Beats
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-10 mt-8 mx-auto">
-              Understand the fundamentals of rhythm, beats, measures, and tempo.
-              Mastering timing ensures your playing is both accurate and
-              musical.
+              Rhythm is the beat that makes music move. Beats are the regular
+              sounds you can tap your foot to. Measures are groups of beats that
+              help keep time. Tempo is how fast or slow the music goes. Learning
+              these helps you play songs correctly and makes your music sound
+              nice and smooth.
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./basic-rhythm-and-beats"
                 className="text-black font-semibold underline"
               >
                 Read More
@@ -189,7 +191,7 @@ const Lesson = () => {
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./piano-simple-songs"
                 className="text-black font-semibold underline"
               >
                 Read More
@@ -210,13 +212,13 @@ const Lesson = () => {
               Chords and Harmony
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-10 mt-8 mx-auto">
-              Explore major and minor chords, understand chord structures, and
-              learn how to play common chord patterns that add harmony to your
-              music.
+              Chords happen when you press two or more keys together. Some sound
+              happy, some sound sad. Chords make your music sound better. You
+              will learn them step by step.
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./chords-and-harmony"
                 className="text-black font-semibold underline"
               >
                 Read More
@@ -236,12 +238,14 @@ const Lesson = () => {
               Dynamics and Expression
             </h1>
             <p className="lg:text-lg text-sm text-[#494949] text-center lg:mt-10 mt-8 mx-auto">
-              Learn how to control volume and add emotion through dynamics,
-              bringing your piano performances to life.
+              Music feels alive when you change how loud or soft you play. This
+              is called dynamics. Learning to control your playing helps you
+              show feelings in your music and makes your piano songs more
+              exciting to listen to.
             </p>
             <div className="flex items-center justify-center mt-4">
               <Link
-                href="./lessons-components/notes"
+                href="./dynamics-and-expression"
                 className="text-black font-semibold underline"
               >
                 Read More
